@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #818181;
+}
+
+.container{
+  padding-right: 380px;
+}
+
+.textVez{
+  height: 120px;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+  background-color: #ffffff86;
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.turno{
+  background-color: rgb(190, 190, 190);
+  font-size: 80px;
+  height: 150px;
+  width: 500px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.turno > .vez{
+  margin-right: 20px;
+}
+
+.placar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.game{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+    height: 166px;
+    width: 166px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(167, 143, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xis{
+    height: 120px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+.xis::after{
+    height: 120px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(90deg);
+    content: "";
+}
+
+.xis {
+    height: 120px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(45deg);
+  }
+
+  .xis::after {
+    height: 120px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+
+  .bola{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .bola::after{
+    height: 80px;
+    width: 80px;
+    background-color: #929191;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 20px;
+  }
+
+  .fechar-jogo{
+    position: absolute;
+    top: 195px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 255, 255, 0.199);
+    display: block;
+  }
+
+
+
